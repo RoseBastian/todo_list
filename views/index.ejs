@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>To-do-list</h1>
+    <div class="box">
+        <% for(var i=0;i<task.length;i++){ %>
+            <form action="/delete" method="post">
+                <div class="item">
+                    <input type="checkbox"name="checkbox"value="<%=task[i]._id%>"onchange="this.form.submit()">
+                    <p><%= task[i].task%></p>
+                 </div> 
+            </form>
+       <% } %>
+        
+    
+
+    <form class="item" action="/" method="post">
+        <input type="text" name="task" placeholder="Input your task ">
+        <button type="submit">+</button>
+    </form>
+    </div>
+</body>
+</html>

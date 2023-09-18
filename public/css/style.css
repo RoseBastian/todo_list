@@ -1,0 +1,122 @@
+/* Body background */
+html {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(135deg, #E4D0D0, #ff99cc);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* Page heading */
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Container box */
+  .box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  /* Header inside the box */
+  #heading {
+    background-color: #a293fa;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  /* To-do list items */
+  .item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #dcdcdc;
+  }
+  
+  .item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Completed items with strike-through */
+  input:checked + p {
+    text-decoration: line-through;
+    text-decoration-color: #ff0066;
+    color: #666;
+  }
+  
+  /* Checkbox style */
+  input[type="checkbox"] {
+    margin: 20px;
+    transform: scale(1.5);
+  }
+  
+  /* To-do item text */
+  p {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Add item form */
+  form {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Add item button */
+  button {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ff0066;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e6005c;
+  }
+  
+  /* Input text box */
+  input[type="text"] {
+    text-align: center;
+    height: 50px;
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #a293fa;
+  }
+  
+  /* Placeholder text */
+  ::placeholder {
+    color: #999;
+  }
+  
+  /* Footer */
+  footer {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    opacity: 0.8;
+  }
+  
